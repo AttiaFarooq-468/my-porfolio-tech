@@ -4962,7 +4962,8 @@ input[type="button"].btn--primary:focus {
         margin-right: 1.4rem;
     }
 }
-@media only screen and (max-width:1024px) and (orientation:portrait){
+@media only screen and (max-width:1024px) and (orientation:portrait)
+{
     .ss-preload{
         transform: scale(0.5);
         transform-origin: 0 0;
