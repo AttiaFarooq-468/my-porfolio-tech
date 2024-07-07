@@ -1031,6 +1031,14 @@ input[type="password"], textarea {
         flex: 0 0 100%;
         max-width: 100%;
     }
+    @media only screen and (max-width:1024px) and (orientation:portrait){
+        body{
+            transform: scale(0.5);
+            transform-origin: 0 0;
+            width: 200%;
+            overflow: hidden;
+        }
+    }
 }
 
 /* ------------------------------------------------------------------- 
@@ -1210,6 +1218,14 @@ input[type="password"], textarea {
     .hide-on-mobile {
         display: none;
     }
+    @media only screen and (max-width:1024px) and (orientation:portrait){
+        body{
+            transform: scale(0.5);
+            transform-origin: 0 0;
+            width: 200%;
+            overflow: hidden;
+        }
+    }
 }
 
 /* ------------------------------------------------------------------- 
@@ -1231,6 +1247,14 @@ input[type="password"], textarea {
     }
     .hide-on-mobile-small {
         display: none;
+    }
+    @media only screen and (max-width:1024px) and (orientation:portrait){
+        body{
+            transform: scale(0.5);
+            transform-origin: 0 0;
+            width: 200%;
+            overflow: hidden;
+        }
     }
 }
 
@@ -1566,6 +1590,14 @@ input[type="password"], textarea {
         flex: 0 0 100%;
         max-width: 100%;
     }
+    @media only screen and (max-width:1024px) and (orientation:portrait){
+    body{
+        transform: scale(0.5);
+        transform-origin: 0 0;
+        width: 200%;
+        overflow: hidden;
+    }
+}
 }
 
 /* ===================================================================
@@ -1707,6 +1739,14 @@ h6, .h6 {
 @media screen and (max-width: 400px) {
     .lead, .attention-getter {
         font-size: calc(var(--text-size) * 1.0556);
+    }
+}
+@media only screen and (max-width:1024px) and (orientation:portrait){
+    body{
+        transform: scale(0.5);
+        transform-origin: 0 0;
+        width: 200%;
+        overflow: hidden;
     }
 }
 
