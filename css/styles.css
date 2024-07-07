@@ -4963,7 +4963,7 @@ input[type="button"].btn--primary:focus {
     }
 }
 @media only screen and (max-width:1024px) and (orientation:portrait){
-    body{
+    .ss-preload{
         transform: scale(0.5);
         transform-origin: 0 0;
         width: 200%;
