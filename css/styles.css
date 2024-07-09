@@ -312,6 +312,7 @@ html {
 
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 /* Render the `main` element consistently in IE. */
@@ -620,6 +621,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
     -webkit-text-size-adjust: none;
+    overflow-x: hidden;
 }
 
 /* ------------------------------------------------------------------- 
@@ -1031,6 +1033,7 @@ input[type="password"], textarea {
         flex: 0 0 100%;
         max-width: 100%;
     }
+  
 }
 
 /* ------------------------------------------------------------------- 
@@ -1210,6 +1213,7 @@ input[type="password"], textarea {
     .hide-on-mobile {
         display: none;
     }
+   
 }
 
 /* ------------------------------------------------------------------- 
@@ -1232,6 +1236,7 @@ input[type="password"], textarea {
     .hide-on-mobile-small {
         display: none;
     }
+  
 }
 
 
@@ -1566,6 +1571,15 @@ input[type="password"], textarea {
         flex: 0 0 100%;
         max-width: 100%;
     }
+    @media only screen and (max-width:1024px) and (orientation:portrait){
+    body{
+        transform: scale(0.5);
+        transform-origin: 0 0;
+        width: 200%;
+        overflow: hidden;
+        overflow-x: hidden;
+    }
+}
 }
 
 /* ===================================================================
@@ -1578,6 +1592,7 @@ html {
 
 html, body {
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -1590,6 +1605,7 @@ body {
     color: var(--color-text);
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 /* ------------------------------------------------------------------- 
@@ -1707,6 +1723,15 @@ h6, .h6 {
 @media screen and (max-width: 400px) {
     .lead, .attention-getter {
         font-size: calc(var(--text-size) * 1.0556);
+    }
+}
+@media only screen and (max-width:1024px) and (orientation:portrait){
+    body{
+        transform: scale(0.5);
+        transform-origin: 0 0;
+        width: 200%;
+        overflow: hidden;
+        overflow-x: hidden;
     }
 }
 
@@ -3867,6 +3892,7 @@ input[type="button"].btn--primary:focus {
 }
 
 @media screen and (max-width: 600px) {
+
     .s-about__content-bottom .btn--download {
         margin-top: var(--vspace-0_5);
         width: 100%;
@@ -3964,6 +3990,9 @@ input[type="button"].btn--primary:focus {
     margin: 16px;
     padding: 20px;
     color:  #949494;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 
   }
 
@@ -4348,6 +4377,21 @@ input[type="button"].btn--primary:focus {
 }
 
 @media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .s-header__nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        flex: 1 1 100%;
+    }
+
     .s-cta .section-desc {
         font-size: var(--text-xl);
         line-height: var(--vspace-1_25);
@@ -4520,6 +4564,21 @@ input[type="button"].btn--primary:focus {
 }
 
 @media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .s-header__nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        flex: 1 1 100%;
+    }
+
     .testimonial-slider__author {
         padding-left: 6.8rem;
     }
@@ -4594,6 +4653,9 @@ input[type="button"].btn--primary:focus {
 
 .container {
     padding: 50px 20px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 .heading_1 {
     font-size: 2.5rem;
@@ -4685,6 +4747,21 @@ input[type="button"].btn--primary:focus {
 }
 
 @media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .s-header__nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        flex: 1 1 100%;
+    }
+
     .s-contact .huge-text {
         font-size: 3.4rem;
     }
@@ -4695,7 +4772,6 @@ input[type="button"].btn--primary:focus {
         font-size: 1.8rem;
     }
 }
-
 @media screen and (max-width: 400px) {
     .s-contact .huge-text {
         font-size: 3.2rem;
@@ -4921,5 +4997,16 @@ input[type="button"].btn--primary:focus {
     }
     .s-footer__social li {
         margin-right: 1.4rem;
+    }
+}
+@media screen and (orientation: portrait) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .container {
+        flex-direction: row;
     }
 }
